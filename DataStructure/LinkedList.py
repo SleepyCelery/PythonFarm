@@ -18,15 +18,15 @@ class LinkedList(object):
                 pointer = pointer.next_node
 
     # 获取起始节点的值
-    def get_first_node_value(self):
+    def __get_first_node_value(self):
         return self.first_node.value
 
     # 获取末尾节点的值
-    def get_last_node_value(self):
+    def __get_last_node_value(self):
         return self.last_node.value
 
     # 判断链表是否为空
-    def whether_list_empty(self):
+    def whether_empty(self):
         if self.first_node.next_node == self.last_node:
             return True
         return False
